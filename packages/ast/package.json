@@ -1,10 +1,13 @@
 {
 	"name": "@tss/ast",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"clean": "rimraf -rf ./dist",
 		"compile": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
