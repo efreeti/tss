@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "system",
+		"target": "es6",
+		"lib": ["es5", "es6"],
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"noEmitOnError": true
+	},
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
