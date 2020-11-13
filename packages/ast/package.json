@@ -1,0 +1,14 @@
+{
+	"name": "@tss/ast",
+	"version": "0.0.1",
+	"types": "dist/index.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"clean": "rimraf -rf ./dist",
+		"compile": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
+		"build": "npm run clean && npm run compile"
+	},
+	"devDependencies": {
+		"dts-bundle-generator": "^5.5.0"
+	}
+}
