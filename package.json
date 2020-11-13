@@ -1,5 +1,5 @@
 {
-	"name": "@tss/project",
+	"name": "@ts-ss/project",
 	"description": "TypeScript Stylesheets Project",
 	"private": true,
 	"workspaces": [
