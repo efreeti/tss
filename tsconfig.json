@@ -4,7 +4,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@tss/*": ["packages/*/src"]
+			"@ts-ss/*": ["packages/*/src"]
 		},
 		"esModuleInterop": true,
 		"skipLibCheck": true,
