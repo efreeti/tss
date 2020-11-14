@@ -1,0 +1,20 @@
+{
+	"name": "@ts-ss/parser",
+	"version": "0.0.1",
+	"main": "dist/index",
+	"types": "dist/index",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"clean": "rimraf -rf ./dist",
+		"compile": "tsc -p tsconfig.build.json",
+		"build-parser-for-test": "cd ./node_modules/tparser && tsc",
+		"build": "npm run clean && npm run compile",
+		"test": "npm run build-parser-for-test && mocha --reporter spec --require ts-node/register '**/*.test.ts'"
+	},
+	"dependencies": {
+		"@ts-ss/ast": "1.0.0",
+		"tparser": "^0.5.0"
+	}
+}
